@@ -16,6 +16,7 @@ public class BlankDisc implements Disc{
 	public BlankDisc(
 			@Value("${disc.title}") String title,
 			@Value("${disc.artist}") String artist){
+
 		System.out.println("Creating Custom Blank disc Bean");
 		this.title=title;
 		this.artist=artist;

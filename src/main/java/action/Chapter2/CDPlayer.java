@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class CDPlayer implements MediaPlayer{
 
 	@Autowired
-	@Qualifier("blank_disc")
+	@Qualifier("blue_ray_disc")
 	public Disc disc;
 
 	public CDPlayer( Disc disc){
