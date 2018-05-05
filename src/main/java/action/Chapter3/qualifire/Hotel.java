@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class Hotel {
 
 	@Autowired
-	@Qualifier("cake")
+	@Qualifier("best_ice_cream")
 	public Dessert dessert;
 
 	public void setDessert(Dessert dessert) {
