@@ -9,13 +9,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import action.CDPlayerConfig;
+import action.JavaBeanConfig;
 
 /**
  * Created by mukeshpal on 28/03/18.
  */
 
-@ContextConfiguration(classes = CDPlayerConfig.class)
+@ContextConfiguration(classes = JavaBeanConfig.class)
 @RunWith(SpringJUnit4ClassRunner.class)
 public class CDPlayerTest {
 

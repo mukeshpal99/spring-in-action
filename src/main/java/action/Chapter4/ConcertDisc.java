@@ -1,27 +1,25 @@
-package action.Chapter2;
+package action.Chapter4;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import  org.springframework.stereotype.Component;
+import org.springframework.stereotype.Component;
 
 /**
- * Created by mukeshpal on 28/03/18.
+ * Created by mukeshpal on 12/06/18.
  */
-
-
 @Component()
-@Qualifier("compact_disc")
-public class CompactDisc implements Disc{
+@Qualifier("concert_disc")
+public class ConcertDisc{
 
 	String title;
 	String artist;
 
 	List<String> tracks = new ArrayList<String>();
 
-	public CompactDisc(){
-		System.out.println("Creating compact disc Bean");
+	public ConcertDisc(){
+		System.out.println("Creating concert disc Bean");
 	}
 
 	public String getTitle(){
@@ -35,7 +33,6 @@ public class CompactDisc implements Disc{
 	public String getArtist(){
 		return this.artist;
 	}
-
 	public void setArtist(String artist){
 		this.artist = artist;
 	}
@@ -48,8 +45,8 @@ public class CompactDisc implements Disc{
 	public void setTracks(List<String> tracks){
 		this.tracks = tracks;
 	}
-	public void play() {
-		System.out.println("Playing: "+ title+" by "+artist);
+	public void playTrack(int trackNumber) {
+		System.out.println("Playing: "+ title+" by "+artist+" Track Number: "+trackNumber);
 	}
 
 }

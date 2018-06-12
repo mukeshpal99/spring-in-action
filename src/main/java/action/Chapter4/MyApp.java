@@ -1,4 +1,4 @@
-package action.Chapter3.qualifire;
+package action.Chapter4;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -12,8 +12,8 @@ public class MyApp {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(JavaBeanConfig.class);
-		Hotel hotel = ctx.getBean(Hotel.class);
 
-		System.out.println(hotel.dessert.getDessert());
+		CDPlayer4 cdPlayer = ctx.getBean(CDPlayer4.class);
+		cdPlayer.play();
 	}
 }
