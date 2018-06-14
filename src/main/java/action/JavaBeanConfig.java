@@ -9,12 +9,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 
 import action.Chapter2.BlankDisc;
 import action.Chapter4.ConcertDisc;
-import action.Chapter4.TrackCounter;
 
 /**
  * Created by mukeshpal on 28/03/18.
@@ -30,14 +28,13 @@ public class JavaBeanConfig {
 	Environment environment;
 
 	@Bean
-	public BlankDisc disc(){
+	public BlankDisc disc() {
 		return new BlankDisc(
-			environment.getProperty("disc.title"),
-			environment.getProperty("disc.artist")
+				environment.getProperty("disc.title"),
+				environment.getProperty("disc.artist")
 
 		);
 	}
-
 
 	@Bean
 	public ConcertDisc concertDisc() {
@@ -54,10 +51,5 @@ public class JavaBeanConfig {
 		concertDisc.setTracks(tracks);
 
 		return concertDisc;
-
 	}
-
-
-
-
 }
