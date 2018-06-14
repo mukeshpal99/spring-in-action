@@ -2,11 +2,13 @@ package action.Chapter2;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by mukeshpal on 05/05/18.
  */
 @Qualifier("blank_disc")
+@Component()
 public class BlankDisc implements Disc{
 
 	String title;

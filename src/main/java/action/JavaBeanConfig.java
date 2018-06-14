@@ -38,9 +38,6 @@ public class JavaBeanConfig {
 		);
 	}
 
-	public static PropertySourcesPlaceholderConfigurer placeholderConfigurer(){
-		return  new PropertySourcesPlaceholderConfigurer();
-	}
 
 	@Bean
 	public ConcertDisc concertDisc() {
